@@ -112,9 +112,11 @@ const Poker = () => {
         await api.post(`/votes`, data).then((response) => {
             if (response.data) {
                 NotificationManager.success('Voto registrado com sucesso!', 'Sucesso');
+                setSelectedVote(null);
                 setVoteDialog(false);
             } else {
                 NotificationManager.error('Erro ao votar na task!', 'Erro');
+                setSelectedVote(null);
                 setVoteDialog(false);
             }
         })

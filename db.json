@@ -16,7 +16,22 @@
     {
       "title": "Task 4",
       "id": 4
+    },
+    {
+      "title": "Task 5",
+      "id": 5
     }
   ],
-  "votes": []
+  "votes": [
+    {
+      "user": null,
+      "vote": 3,
+      "id": 1
+    },
+    {
+      "user": null,
+      "vote": 3,
+      "id": 2
+    }
+  ]
 }
