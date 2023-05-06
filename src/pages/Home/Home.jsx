@@ -21,24 +21,23 @@ function Copyright(props) {
 }
 
 const Home = () => {
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const [userNameDialog, setUserNameDialog] = useState(false);
     const sessionUser = getItemSession('username') || null;
     const [username, setUserName] = useState("");
 
     useEffect(() => {
-        setLoading(true)
         if (!sessionUser) {
             setUserNameDialog(true);
+        } else {
+            setUserName(sessionUser);
         }
-
-        setUserName(sessionUser);
     }, [username, sessionUser])
 
     const handleUserNameSession = () => {
         setUserNameDialog(false);
         setItemSession({ key: 'username', value: username });
-        setLoading(false)
+        setLoading(false);
     };
 
     return (
