@@ -95,7 +95,7 @@ function DashboardContent({ children }) {
             noWrap
             sx={{ flexGrow: 1 }}
           >
-            Planning Poker
+            Tibia Log Reader
           </Typography>
         </Toolbar>
       </AppBar>

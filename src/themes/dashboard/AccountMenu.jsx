@@ -13,7 +13,7 @@ import Loading from '../../components/Loading';
 // import { API_URL } from '../../config';
 
 const AccountMenu = (props) => {
-  const { name, email, logout, loading, avatar } = props;
+  const { name, email, logout, loading } = props;
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 

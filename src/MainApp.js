@@ -32,7 +32,7 @@ const themeTIPO_ADMIN = createTheme({
 	palette: {
 		type: 'light',
 		primary: {
-			main: '#00c5cc',
+			main: '#a40059',
 		},
 		secondary: {
 			main: '#303030',
@@ -57,7 +57,7 @@ const MainApp = () => {
 			<Wrapper>
 				<ReactLoading
 					type="spin"
-					color="#00c5cc"
+					color="#a40059"
 					height={isMobile ? '10%' : '2%'}
 					width={isMobile ? '10%' : '2%'}
 				/>

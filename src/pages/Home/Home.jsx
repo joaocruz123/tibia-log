@@ -10,7 +10,7 @@ import { getItemSession, setItemSession } from "../../services/sessionService";
 function Copyright(props) {
     return (
         <Typography variant="body2" color="text.secondary" align="center" {...props}>
-            {'Desenvolvido por '}
+            {'Developed by '}
             <Link color="inherit" href="https://github.com/joaocruz123">
                 João Cruz
             </Link>{' '}
@@ -31,6 +31,7 @@ const Home = () => {
             setUserNameDialog(true);
         } else {
             setUserName(sessionUser);
+            setLoading(false);
         }
     }, [username, sessionUser])
 
@@ -68,7 +69,7 @@ const Home = () => {
                                                 color: '#383838'
                                             }}
                                         >
-                                            Bem-vindo ao Planning Poker!
+                                            Welcome to Tibia Log Reader!
                                         </Typography>
                                         <Typography component="h2" variant="body1"
                                             sx={{
@@ -77,8 +78,7 @@ const Home = () => {
                                                 fontSize: '16px'
                                             }}
                                         >
-                                            Navegue até o menu lateral para ter acesso ao controle de
-                                            tasks, e iniciar o planning poker.
+                                            Navigate to the side menu to access the records control, and be able to insert the log to generate the data.
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={12} sm={5} md={5}
@@ -100,8 +100,8 @@ const Home = () => {
             <CustomDialog
                 open={userNameDialog}
                 disableEscapeKeyDown={true}
-                onClose={false}
-                handleClose={() => setUserNameDialog(false)}
+                onClose={() => { }}
+                handleClose={() => { }}
                 title={`Qual o seu nome?`}
                 description={
                     <>

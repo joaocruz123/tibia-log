@@ -22,26 +22,26 @@ export const mainListItems = (
       underline="none"
       sx={styleCustom}
     >
-      <Tooltip title="Inicio" placement="right-start" arrow>
+      <Tooltip title="Home" placement="right-start" arrow>
         <ListItemButton>
           <ListItemIcon>
             <DashboardIcon />
           </ListItemIcon>
-          <ListItemText primary="Inicio" />
+          <ListItemText primary="Home" />
         </ListItemButton>
       </Tooltip>
     </Link>
     <Link
-      href="/tasks"
+      href="/log"
       underline="none"
       sx={styleCustom}
     >
-      <Tooltip title="Tasks" placement="right-start" arrow>
+      <Tooltip title="Logs" placement="right-start" arrow>
         <ListItemButton>
           <ListItemIcon>
             <ListAltIcon />
           </ListItemIcon>
-          <ListItemText primary="Tasks" />
+          <ListItemText primary="Logs" />
         </ListItemButton>
       </Tooltip>
     </Link>
